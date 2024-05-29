@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4AF1676-C72D-4EAA-983F-2F708A0BC8F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>POS_Project.My.MyApplication</StartupObject>
+    <RootNamespace>POS_Project</RootNamespace>
+    <AssemblyName>POS_Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POS_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POS_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ClassModules\DatabaseModule.vb" />
+    <Compile Include="OrderModule\FileMaintenanceForm.Designer.vb">
+      <DependentUpon>FileMaintenanceForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrderModule\FileMaintenanceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSforms\formEnergize.Designer.vb">
+      <DependentUpon>formEnergize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POSforms\formEnergize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSforms\formRefresh.Designer.vb">
+      <DependentUpon>formRefresh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POSforms\formRefresh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSforms\formRelax.Designer.vb">
+      <DependentUpon>formRelax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POSforms\formRelax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderModule\POSForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderModule\POSForm.Designer.vb">
+      <DependentUpon>POSForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderModule\EmployeeForm.Designer.vb">
+      <DependentUpon>EmployeeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrderModule\EmployeeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProdBuilderforms\ProdBuilderForm.Designer.vb">
+      <DependentUpon>ProdBuilderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProdBuilderforms\ProdBuilderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSforms\ReceiptForm.Designer.vb">
+      <DependentUpon>ReceiptForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POSforms\ReceiptForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startupforms\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Startupforms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Databases\POS_databaseDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_databaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesModule\PurchaseOrderForm.Designer.vb">
+      <DependentUpon>PurchaseOrderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesModule\PurchaseOrderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryModule\RawMaterialsForm.Designer.vb">
+      <DependentUpon>RawMaterialsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryModule\RawMaterialsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryModule\ReceivingForm.Designer.vb">
+      <DependentUpon>ReceivingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryModule\ReceivingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryModule\ReturnForm.Designer.vb">
+      <DependentUpon>ReturnForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryModule\ReturnForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesModule\SalesInvoiceForm.Designer.vb">
+      <DependentUpon>SalesInvoiceForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesModule\SalesInvoiceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryModule\StocksForm.Designer.vb">
+      <DependentUpon>StocksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryModule\StocksForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryModule\ProductsForm.Designer.vb">
+      <DependentUpon>ProductsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryModule\ProductsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startupforms\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Startupforms\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SalesModule\VendorForm.Designer.vb">
+      <DependentUpon>VendorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesModule\VendorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OrderModule\FileMaintenanceForm.resx">
+      <DependentUpon>FileMaintenanceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSforms\formEnergize.resx">
+      <DependentUpon>formEnergize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSforms\formRefresh.resx">
+      <DependentUpon>formRefresh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSforms\formRelax.resx">
+      <DependentUpon>formRelax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdBuilderforms\ProdBuilderForm.resx">
+      <DependentUpon>ProdBuilderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSforms\ReceiptForm.resx">
+      <DependentUpon>ReceiptForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startupforms\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderModule\POSForm.resx">
+      <DependentUpon>POSForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderModule\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startupforms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesModule\PurchaseOrderForm.resx">
+      <DependentUpon>PurchaseOrderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryModule\RawMaterialsForm.resx">
+      <DependentUpon>RawMaterialsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryModule\ReceivingForm.resx">
+      <DependentUpon>ReceivingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryModule\ReturnForm.resx">
+      <DependentUpon>ReturnForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesModule\SalesInvoiceForm.resx">
+      <DependentUpon>SalesInvoiceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryModule\StocksForm.resx">
+      <DependentUpon>StocksForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryModule\ProductsForm.resx">
+      <DependentUpon>ProductsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesModule\VendorForm.resx">
+      <DependentUpon>VendorForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Databases\POS_databaseDataSet.xsc">
+      <DependentUpon>POS_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet.xss">
+      <DependentUpon>POS_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet4.xsc">
+      <DependentUpon>POS_databaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet4.xss">
+      <DependentUpon>POS_databaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet5.xsc">
+      <DependentUpon>POS_databaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet5.xss">
+      <DependentUpon>POS_databaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet6.xsc">
+      <DependentUpon>POS_databaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet6.xss">
+      <DependentUpon>POS_databaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet7.xsc">
+      <DependentUpon>POS_databaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet7.xss">
+      <DependentUpon>POS_databaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet8.xsc">
+      <DependentUpon>POS_databaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet8.xss">
+      <DependentUpon>POS_databaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet1.xsc">
+      <DependentUpon>POS_databaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet1.xss">
+      <DependentUpon>POS_databaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet3.xsc">
+      <DependentUpon>POS_databaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet3.xss">
+      <DependentUpon>POS_databaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet2.xsc">
+      <DependentUpon>POS_databaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Databases\POS_databaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS_databaseDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Databases\POS_databaseDataSet2.xss">
+      <DependentUpon>POS_databaseDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Databases\POS_database.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

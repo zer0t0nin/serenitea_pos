@@ -1,0 +1,611 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+POS_Project
+</name>
+</assembly>
+<members>
+<member name="T:POS_Project.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:POS_Project.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:POS_Project.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5.tblPurchaseOrderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5.tblPurchaseOrderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5.tblPurchaseOrderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5TableAdapters.tblPurchaseOrderTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet5)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6.tblRawMatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6.tblRawMatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6.tblRawMatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6TableAdapters.tblRawMatTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet6,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet6)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet6TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7.ReceivingQueryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7.ReceivingQueryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7.ReceivingQueryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7TableAdapters.ReceivingQueryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet7,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet7)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet7TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8.tblVendorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8.tblVendorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8.tblVendorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8TableAdapters.tblVendorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet8,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet8)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet8TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1.tblProductDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1.tblProductRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1.tblProductRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1TableAdapters.tblProductTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3.tblFileMaintenanceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3.tblFileMaintenanceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3.tblFileMaintenanceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3TableAdapters.tblFileMaintenanceTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2.SalesInvoiceQueryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2.SalesInvoiceQueryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2.SalesInvoiceQueryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2TableAdapters.SalesInvoiceQueryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet.EmployeeQueryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet.EmployeeQueryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet.EmployeeQueryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSetTableAdapters.EmployeeQueryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4.StockQueryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4.StockQueryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4.StockQueryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4TableAdapters.StockQueryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(POS_Project.POS_databaseDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(POS_Project.POS_databaseDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(POS_Project.POS_databaseDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager.UpdateAll(POS_Project.POS_databaseDataSet4)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:POS_Project.POS_databaseDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

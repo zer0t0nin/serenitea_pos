@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="POS_databaseDataSet4" targetNamespace="http://tempuri.org/POS_databaseDataSet4.xsd" xmlns:mstns="http://tempuri.org/POS_databaseDataSet4.xsd" xmlns="http://tempuri.org/POS_databaseDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="POS_databaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="POS_databaseConnectionString (MySettings)" PropertyReference="ApplicationSettings.POS_Project.My.MySettings.GlobalReference.Default.POS_databaseConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StockQueryTableAdapter" GeneratorDataComponentClassName="StockQueryTableAdapter" Name="StockQuery" UserDataComponentName="StockQueryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="POS_databaseConnectionString (MySettings)" DbObjectName="StockQuery" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductName, StockQuantity FROM StockQuery</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="StockQuantity" DataSetColumn="StockQuantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="POS_databaseDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="POS_databaseDataSet4" msprop:Generator_UserDSName="POS_databaseDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StockQuery" msprop:Generator_TableClassName="StockQueryDataTable" msprop:Generator_TableVarName="tableStockQuery" msprop:Generator_TablePropName="StockQuery" msprop:Generator_RowDeletingName="StockQueryRowDeleting" msprop:Generator_RowChangingName="StockQueryRowChanging" msprop:Generator_RowEvHandlerName="StockQueryRowChangeEventHandler" msprop:Generator_RowDeletedName="StockQueryRowDeleted" msprop:Generator_UserTableName="StockQuery" msprop:Generator_RowChangedName="StockQueryRowChanged" msprop:Generator_RowEvArgName="StockQueryRowChangeEvent" msprop:Generator_RowClassName="StockQueryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StockQuantity" msprop:Generator_ColumnVarNameInTable="columnStockQuantity" msprop:Generator_ColumnPropNameInRow="StockQuantity" msprop:Generator_ColumnPropNameInTable="StockQuantityColumn" msprop:Generator_UserColumnName="StockQuantity" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
